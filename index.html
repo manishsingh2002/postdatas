@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX — Billionaire Posts · JSON Import Bank</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">APEX <span>Post Bank · JSON Import</span></div>
+        <div class="header-right">... Posts · 18 Slide Types<br>Instagram Format Ready</div>
+    </header>
+
+    <div class="nav-float" id="nav-float"></div>
+    <div id="toast-container"></div>
+
+    <div class="hero">
+        <h1>Premium Billionaire Posts<br>JSON Import Ready</h1>
+        <p>Every post is structured for direct JSON import into APEX Post Studio. All 18 slide types used. Theme, accent, font size, and format pre-configured. Copy the JSON, paste into your generator's import field, and all slides load instantly.</p>
+        
+        <div class="hero-info">
+            <div class="info-box">
+                <div class="info-num info-num-total">0</div>
+                <div class="info-label">Total Posts</div>
+            </div>
+            <div class="info-box">
+                <div class="info-num">18</div>
+                <div class="info-label">Slide Types</div>
+            </div>
+            <div class="info-box">
+                <div class="info-num">3</div>
+                <div class="info-label">Premium Themes</div>
+            </div>
+            <div class="info-box">
+                <div class="info-num">100%</div>
+                <div class="info-label">Import Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-to">
+        <div class="how-to-box">
+            <div class="how-to-title">How to Import to APEX</div>
+            <div class="how-to-steps">
+                <div class="step-box">
+                    <div class="step-num-l">01</div>
+                    <div class="step-text">Click "Expand" on any post card and click the yellow "Copy JSON" button to grab the slide data.</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num-l">02</div>
+                    <div class="step-text">Open APEX Post Studio and locate the "JSON Import" tab or field in the sidebar.</div>
+                </div>
+                <div class="step-box">
+                    <div class="step-num-l">03</div>
+                    <div class="step-text">Paste the JSON and hit Import. All slides, styles, and captions will load into the canvas instantly.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <span class="filter-label">Filter:</span>
+        <button class="filter-btn active" onclick="filterPosts('all', this)">All</button>
+        <button class="filter-btn" onclick="filterPosts('Wealth Psychology', this)">Wealth Psychology</button>
+        <button class="filter-btn" onclick="filterPosts('Power & Influence', this)">Power & Influence</button>
+        <button class="filter-btn" onclick="filterPosts('Decision Frameworks', this)">Decision Frameworks</button>
+        <button class="filter-btn" onclick="filterPosts('Money Behavior', this)">Money Behavior</button>
+        <button class="filter-btn" onclick="filterPosts('Silent Moves', this)">Silent Moves</button>
+        <button class="filter-btn" onclick="filterPosts('Misconceptions', this)">Misconceptions</button>
+        <button class="filter-btn" onclick="filterPosts('Status & Perception', this)">Status & Perception</button>
+        <button class="filter-btn" onclick="filterPosts('Systems vs Work', this)">Systems vs Work</button>
+    </div>
+
+    <div class="posts-container" id="posts-container"></div>
+
+    <div class="footer">
+        APEX Post Bank · Billionaire Thinking Posts · JSON Import Format · All Rights Reserved
+    </div>
+
+    <!-- Data loaded first -->
+    <script src="data.js"></script>
+    <!-- Logic loaded second -->
+    <script src="script.js"></script>
+</body>
+
+</html>
